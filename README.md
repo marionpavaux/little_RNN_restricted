@@ -30,7 +30,7 @@ conda update --all
 
 ## Data ## 
 
-<li> Next to the src folder create a folder named "tests_results". Put your data folder in "tests_results".</li>
+Next to the src folder create a folder named "tests_results". Put your data folder in "tests_results".
 
 Data description and format is restricted. 
 
