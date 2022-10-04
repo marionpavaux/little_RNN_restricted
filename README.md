@@ -1,12 +1,12 @@
 # little_RNN
 
-This repository is the public/restricted version of the private repository little_RNN. The little RNN is a project I conducted at .NeuroRestore for my 6-month master's thesis. The project aims at creating an RNN, trained by backpropagation, that can reproduce the link between the time series of activation of the 16 electrodes of the paddle lead .NeuroRestore implements in paraplegic patients, and the time series of activation of 14 muscles of the lower limb (emgs). This model could be use for scientific understanding of the spinal circuits, as a simulation model for new data, or an optimization model while adding a controller.
+This repository is the public/restricted version of the private repository little_RNN. I conducted this project at the Swiss laboratory .NeuroRestore in Lausanne in the Cyberspace team for my 6-month master's thesis. The project aims at creating a RNN, trained by backpropagation, that can reproduce the link between the time series of activation of 16 electrodes of the paddle lead .NeuroRestore implements in paraplegic patients, and the time series of activation of 14 muscles of the lower limb (emgs). This model could be use for scientific understanding of the spinal circuits, as a simulation model for new data, or an optimization model while adding a controller.
 
 The report and defense remain confidential because they expose medical data analysis.
 
 In the folder plot_examples, you can take a look at some resulting plots of the main_rnn_training.py script. There was many more but I only chose those that do not compromise medical data. 
 
-The folder is composed of three packages, one intended for data processing and analysis (data), one for the training of the rnn (rnn) and finally one for the training of the controller (controller).  
+The source folder (src) is composed of three packages, one intended for data processing and analysis (data), one for the training of the rnn (rnn) and finally one for the training of the controller (controller).  
 
 ## Environment creation ##
 
