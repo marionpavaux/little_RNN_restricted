@@ -42,7 +42,7 @@ To train a RNN :
 
 <li> In the folder src/tests/params_files create a new_parameters file that has the name "constants_{name_of_your_test}" following the demo parameters file.</li>
 
-<li> To lauch the training type in the source folder "python main_rnn_training.py "{name_of_your_test}".</li>
+<li> To lauch the training type in the source folder "python main_rnn_training.py {name_of_your_test}".</li>
 
 The code will store the results of your test in the folder "tests_results".
 
