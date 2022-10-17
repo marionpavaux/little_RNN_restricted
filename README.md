@@ -12,8 +12,6 @@ The source folder (src) is composed of three packages, one intended for data pro
 
 <ol>
 
-<li>download the data and put it in tests_results folder</li>
-
 <li>create conda environment with name little_RNN</li>
 conda create -n little_RNN anaconda python=3.9
 
