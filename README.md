@@ -34,9 +34,9 @@ Next to the src folder create a folder named "tests_results". Put your data fold
 
 Data description and format is restricted. 
 
-## Training an RNN ## 
+## RNN training ## 
 
-To train an RNN : 
+To train a RNN : 
 
 <ol>
 
