@@ -21,7 +21,7 @@ conda create -f environment.yml
 
 Data description and format is restricted.
 
-## Training an RNN
+## RNN training
 
 To train a RNN :
 
