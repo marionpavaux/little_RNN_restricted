@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "little RNN"
+version = "0.1.0"
+description = "little RNN"
+authors = "Marion Pavaux"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pdoc3 = "^0.10.0"
+notebook = "^6.4.10"
+pre-commit = "^3.3.3"
+platformdirs = "^3.5.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pre-commit = "^3.3.3"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+profile = "black"
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
+ensure_newline_before_comments = true
+use_parentheses = true
+known_third_party = []
+force_grid_wrap = 0
+extend_skip_glob = ["**/*__init__.py"]
+
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+
+
+[tool.flake8]
+ignore = ['E203', 'E266', 'E501', 'W503', 'F401', 'F841']
+extend-ignore = 'E203'
+max-line-length = 120
+max-complexity = 10
+select = ['B', 'C', 'E', 'F', 'W', 'T4', 'B9']
+exclude = ['__init__.py']
+
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = true
+fail-under = 5
+verbose = 1
+generate-badge = "projects/{{ cookiecutter.repo_name }}/"

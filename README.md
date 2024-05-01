@@ -4,52 +4,35 @@ This repository is the public/restricted version of the private repository littl
 
 The report and defense remain confidential because they expose medical data analysis.
 
-In the folder plot_examples, you can take a look at some resulting plots of the main_rnn_training.py script. There was many more but I only chose those that do not compromise medical data. 
+In the folder plot_examples, you can take a look at some resulting plots of the main_rnn_training.py script. There was many more but I only chose those that do not compromise medical data.
 
-The source folder (src) is composed of three packages, one intended for data processing and analysis (data), one for the training of the rnn (rnn) and finally one for the training of the controller (controller).  
+The source folder (src) is composed of three packages, one intended for data processing and analysis (data), one for the training of the rnn (rnn) and finally one for the training of the controller (controller).
 
-## Environment creation ##
+## Workspace setup
 
-<ol>
+1. create conda environment:
+   `bash
+conda create -f environment.yml
+`
 
-<li>download the data and put it in tests_results folder</li>
+2. install specific pytorch tools if you have a GPU (see https://pytorch.org/get-started/locally/)
 
-<li>create conda environment with name little_RNN</li>
-conda create -n little_RNN anaconda python=3.9
+## Data
 
-<li>activate environment 
-conda activate little_RNN
+Data description and format is restricted.
 
-<li>install pytorch</li> 
-follow instruction on pytorch webpage get started : https://pytorch.org/get-started/locally/ 
+## Training an RNN
 
-<li>update the environment 
-conda update --all 
+To train a RNN :
 
-</ol>
+1. Check the constant parameters in the **init**.py file of each package
 
-## Data ## 
+2. In the folder src/tests/params*files create a new_parameters file that has the name "constants*{name_of_your_test}" following the demo parameters file.
 
-Next to the src folder create a folder named "tests_results". Put your data folder in "tests_results".
-
-Data description and format is restricted. 
-
-## Training an RNN ## 
-
-To train an RNN : 
-
-<ol>
-
-<li> Check the constant parameters in the __init__.py file of each package</li>
-
-<li> In the folder src/tests/params_files create a new_parameters file that has the name "constants_{name_of_your_test}" following the demo parameters file.</li>
-
-<li> To lauch the training type in the source folder "python main_rnn_training.py "{name_of_your_test}".</li>
+3. To lauch the training type in the source folder "python main_rnn_training.py "{name_of_your_test}".
 
 The code will store the results of your test in the folder "tests_results".
 
-</ol>
+## Testing the network
 
-## Testing the network ##
-
-Many test functions are provided in the test package. 
+Many test functions are provided in the test package.
